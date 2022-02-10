@@ -30,6 +30,8 @@ print("Hello "+username+", on your next birthday you’ll be "+str(int(age)+1)+"
 #so it should print 5 random strings(words) that combine characters ‘h’, ‘e’, ‘l’, ‘l’, ‘o’ -> ‘hlelo’, ‘olelh’, ‘loleh’
 
 print("Task 3 - Words combination")
+user_str = input("Write Your string here: ")
+str_len = len(user_str)
 
 
 #Write a program that asks the answer for a mathematical expression, checks whether the user is right or wrong,
