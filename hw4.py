@@ -12,7 +12,7 @@
 # 3. Виправити наступний фрагмент кода, щоб не виникало помилки при виконанні:
 print("Task 3 - basic")
 major_version = 3
-minor_version = .9
+minor_version = 0.9
 version = major_version + minor_version
 language = 'Python'
 #language_version = language + ' ' + version
