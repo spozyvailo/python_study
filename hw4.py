@@ -49,7 +49,7 @@ print(str(sur_len) + '! = ', str(i), end="\n\n")
 print("Task 6 - basic")
 string = input("Write here Your text --> ")
 while len(string) > 1:
-    string = string[0:len(string) - 1]
+    string = string[ : - 1]
     print(string)
 else:
     print("Nothing's left here", end="\n\n")
