@@ -37,13 +37,14 @@ for i in range(5):
     print(sample(user_str, len(user_str)))
 print("", end="\n")
 
+
 #Write a program that asks the answer for a mathematical expression, checks whether the user is right or wrong,
 #and then responds with a message accordingly.
 
 print("Task 4 - The math quiz program")
 
-num1 = randint(1, 99)
-num2 = randint(1, 99)
+num1 = randint(1, 201)
+num2 = randint(1, 201)
 
 print("Solve the example:")
 if num1 > num2:
