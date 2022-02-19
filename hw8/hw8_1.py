@@ -12,16 +12,13 @@
 
 def eucledian_gcd(a, b):
 
-    if a < b:
-        a, b = b, a
+    while a != b:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
 
-    remainder = a % b
-    if remainder == 0:
-        print(b)    #в консоль виводить результат і все ок
-        return b    #як результат значення не повертає  ＼(º □ º)/
-    else:
-        eucledian_gcd(b, remainder)
-
+    return a
 
 if __name__ == "__main__":
 
