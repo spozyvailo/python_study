@@ -2,9 +2,11 @@ import service
 
 tasks = []
 
+
 def end_work():
     print("Good bye!")
     exit(0)
+
 
 def create_new_task():
     id = service.get_task_id(tasks)
@@ -21,8 +23,10 @@ def create_new_task():
     tasks.append(new_task)
     print(f"New task created successfully! ID = {id}", end="\n\n")
 
+
 def view_tasks_list():
     print(tasks)
+
 
 def view_task():
     task_id = service.input_task_id()
@@ -31,8 +35,10 @@ def view_task():
     except IndexError:
         print(f"There is no task with ID {task_id}", end="\n\n")
 
+
 def edit_task():
     pass
+
 
 def delete_task():
     task_id = service.input_task_id()
@@ -41,6 +47,7 @@ def delete_task():
         print(f"Task with ID = {task_id} was deleted", end="\n\n")
     except IndexError:
         print(f"There is no task with ID {task_id}", end="\n\n")
+
 
 ###########################################################
 if __name__ == "__main__":
@@ -52,6 +59,9 @@ Here are the functions of this program:
     3. View task detail
     4. Edit task
     5. Delete task
+    6. Find task by name
+    7. Sort tasks by priority
+    8. Find overdue tasks
     """)
 
     while True:
@@ -68,3 +78,11 @@ Here are the functions of this program:
             edit_task()
         elif usr_func == 5:
             delete_task()
+        elif usr_func == 6:
+            ...
+        elif usr_func == 7:
+            ...
+        elif usr_func == 8:
+            ...
+
+#впевнений, є більш короткий спосіб організувати вивід списку задач і подальшу обробку ¯\_(ツ)_/
