@@ -27,15 +27,21 @@ def view_tasks_list():
 def view_task():
     task_id = service.input_task_id()
     try:
-        print[task_id]
+        print(tasks[task_id])
     except IndexError:
-        print(f"There is no task with ID {task_id}")
+        print(f"There is no task with ID {task_id}", end="\n\n")
 
 def edit_task():
     pass
 
 def delete_task():
-    pass
+    task_id = service.input_task_id()
+    try:
+        tasks.pop(task_id - 1)
+        print(f"Task with ID = {task_id} was deleted", end="\n\n")
+    except IndexError:
+        print(f"There is no task with ID {task_id}", end="\n\n")
+
 ###########################################################
 if __name__ == "__main__":
     print("""

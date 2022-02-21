@@ -55,7 +55,10 @@ def check_due_date(due_date):
     date_format = "%d.%m.%Y"
     try:
         deadline = datetime.strptime(due_date, date_format)
-        return deadline
+        if deadline < datetime.now():
+            print("Deadline passed!")
+        else:
+            return deadline
     except:
         print("Error date! Date format must be dd.mm.yyyy!")
 
@@ -96,7 +99,7 @@ def check_input_no_func(usr_func):
 
 
 def input_task_id():
-    task_id = input("Enter task ID")
+    task_id = input("Enter task ID: ")
     return check_input_task_id(task_id)
 
 def check_input_task_id(task_id):
