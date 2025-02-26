@@ -18,6 +18,5 @@ def find_biggest_div():
             test_num = 600851475143/i
             if is_simple(test_num):
                 return test_num
-                break
 
 print(find_biggest_div())   #6857
