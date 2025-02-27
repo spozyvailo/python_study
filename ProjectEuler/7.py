@@ -11,10 +11,10 @@ def is_simple(num):
     return True
 
 def find10001():
-    c = 0
-    i = 1
+    c = 2
+    i = 3
     while c < 10002:
-        i += 1
+        i += 2
         if is_simple(i):
             c += 1
 
